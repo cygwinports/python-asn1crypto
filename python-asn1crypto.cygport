@@ -1,0 +1,15 @@
+inherit python-wheel
+
+NAME="python-asn1crypto"
+VERSION=0.22.0
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="Python ASN.1 library"
+DESCRIPTION="Fast ASN.1 parser and serializer with definitions for private keys,
+public keys, certificates, CRL, OCSP, CMS, PKCS#3, PKCS#7, PKCS#8, PKCS#12,
+PKCS#5, X.509 and TSP."
+
+ARCH=noarch
+
+python2_asn1crypto_CONTENTS=${PYTHON2_SITELIB#/}
+python3_asn1crypto_CONTENTS=${PYTHON3_SITELIB#/}
